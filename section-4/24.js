@@ -2,14 +2,14 @@
 // A process or set of steps to accomplish a certain task.
 
 /**   Probllem solving
- * 1.understanding the Provlem
- * 2.Explore conccrete ecamples
+ * 1.understanding the problem
+ * 2.Explore conccrete example
  * 3.break it down
  * 4.solve/simplify
  * 5.Look back and refactor
  */
 
-/**Understanding the problem
+/**1.Understanding the problem
  * Ask question in order to understand the question
  * 1.can I restate the problem in you own words.
  * 2.what are the inputs that go into problem?
@@ -37,7 +37,7 @@
 
  */
 
-/**  2.Explore conccrete ecamples
+/**  2.Explore conccrete example
    * coming up with examples can help you understand the problem better
    * examples provides sanity checks that your eventula solution works how it should
    * user stories!
@@ -54,10 +54,6 @@
 /**3. Break it down
  * explicity write out the step you need to take
  * whihc means planning ahead of by commenting out the steps(write out the steps)
- *
- *
- *
- *
  */
 
 /**4. Solve/Simplify
@@ -90,7 +86,7 @@ function charCount(str) {
 }
 console.log(charCount("hello"));
 
-/** 4. Look Back & Reafactor
+/** 5. Look Back & Reafactor
  * congrats on solving it, but you are not done.
  * Refactoring questions
  * 1.can you check the result?
