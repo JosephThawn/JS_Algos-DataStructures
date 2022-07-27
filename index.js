@@ -1,45 +1,54 @@
-/** Divide and Conquer
- * This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of sata. This pattern can tremendously decrease time complexity.
+/**Frequecny Counter/Multple Pointers- areThere Duplciates
+ * Implement a function called areThfeDuplicates which accepts a variable number of arguments, and checks whether there are any duplicates among the arguments passed in, You can solve this using the frequency counter pattern Or the multiple pointers patter.
+ *Inputs:
+ *areThereDuplicates(1, 2, 3) // false
+ *areThereDuplicates(1, 2, 2) // true
+ *areThereDuplicates('a', 'b', 'c', 'a') // ture
+ *Restrictions:
+ *Time- O(N)
+ *space- O(N)
+ *Bonus:
+ * Time- O(n log n)
+ * Space- O(1)
  */
-
-/**Given a sorted arrary of intergers, write a function called search, that accepts a value and returns the index where the value passed to the function is located. Fi the value is not found, return -1
- *
- * search([1, 2, 3, 4, 5, 6], 4) // 3
- * search([1 ,2 ,3 , 4, 5, 6], 6) // 5
- * search([1, 2 ,3 ,4, 5, 6,], 11) // -1
- */
-
-//a naive solution(linear search)
-function search(arr, val) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === val) {
-      return i;
-    }
+//solving with Frequecny pattern
+function areThereDuplicates() {
+  let collection = {};
+  for (let val in arguments) {
+    collection[arguments[val]] = (collection[arguments[val]] || 0) + 1;
   }
-  return -1;
-}
-console.log(search([1, 2, 3, 4, 5, 6], 4));
-//This soultion time complexity O(n)
-//it is good when the index of arry is short; it wont affect to time complexity much
-
-//refactor solution (binary search)
-function searchOne(array, val) {
-  let min = 0;
-  let max = array.length - 1;
-
-  while (min <= max) {
-    let middle = Math.floor((min + max) / 2);
-    let currentElement = array[middle];
-
-    if (array[middle] < val) {
-      min = middle + 1;
-    } else if (array[middle] > val) {
-      max = middle - 1;
-    } else {
-      return middle;
-    }
+  for (let key in collection) {
+    if (collection[key] > 1) return true;
   }
-  return -1;
+  return false;
 }
-console.log(searchOne([1, 2, 3, 4, 5, 6, 100, 120, 150, 150], 150));
-//This binary search is a fast way and avoid time complexty issue to find the answer.
+// console.log(areThereDuplicates("a", "b", "c", "a"));
+
+//soling with using multiple pointers
+//the second solution dose not seem right and will be back!
+function areThereDuplicatesOne(...args) {
+  // Two pointers
+  //why sort here?
+  args.sort((a, b) => a > b);
+  let start = 0;
+  let next = 1;
+  while (next < args.length) {
+    if (args[start] === args[next]) {
+      return true;
+    }
+    start++;
+    next++;
+  }
+  return false;
+}
+
+console.log(areThereDuplicatesOne(1, 5, 3, 4, 1));
+console.log(areThereDuplicatesOne("a", "b", "c", "a"));
+console.log(areThereDuplicatesOne(1, 2, 3));
+
+//solving with one liner solution
+function areThereDuplicatesTwo() {
+  return new Set(arguments).size !== arguments.length;
+}
+console.log(areThereDuplicatesTwo("a", "b", "c", "a"));
+console.log(areThereDuplicatesTwo(1, 5, 3, 4));

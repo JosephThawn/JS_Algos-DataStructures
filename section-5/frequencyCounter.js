@@ -38,3 +38,4 @@ function validAnagram(first, second) {
   return true;
 }
 console.log(validAnagram("anagram", "nagaram"));
+console.log(validAnagram(123, 321));

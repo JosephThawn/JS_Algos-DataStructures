@@ -1,8 +1,5 @@
 /**Multiple Pointers
- *
- *
  * creating pointers or values that correspond to an index or position and move towards the beginning, end or midddle based on a certain coditio. very effecient for solving problems with minmal space complexith as well.
- *
  * An Example
  * Write a function called sumZero which accepts a sorted arrary(order from smallest number to oldest [-3,-2, -1, 0, 1, 2,3]) of integers. The function should find the first pair where the sum is 0. Return an arrary that includes both values that sum to zero or undefined if a pair does not exist.
  * sumZero([-3, -2, -1, 0, 1, 2, 3])// [-3, 3] this is true
