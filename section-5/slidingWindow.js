@@ -38,11 +38,9 @@ function maxSubarrarySumOne(arr, num) {
   for (let i = 0; i < num; i++) {
     maxSum += arr[i];
   }
-  tempSum = maxSum;
-  console.log(maxSum);
 
-  //the loop only loop one time and solve the problem of time complexity issue
   tempSum = maxSum;
+  //the loop only loop one time and solve the problem of time complexity issue
   for (let i = num; i < arr.length; i++) {
     //dont understand this part?
     tempSum = tempSum - arr[i - num] + arr[i];
