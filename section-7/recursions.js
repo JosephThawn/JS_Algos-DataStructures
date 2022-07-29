@@ -23,11 +23,11 @@ function factorial(num) {
 console.log(factorial(5));
 
 /**Common Recursion pitfalls
- 1. without the base case returns infinity
- 2. forgetting to return or returning the wrong thing.
- 3. stack overflow, which means your stack is not stopping.
-
- */
+   1. without the base case returns infinity
+   2. forgetting to return or returning the wrong thing.
+   3. stack overflow, which means your stack is not stopping.
+  
+   */
 
 /**Helper Method Recursion
  *
@@ -57,8 +57,8 @@ function collectOddValues(arr) {
 console.log(collectOddValues([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 /**Pure Recursion
- Pure Recurshio tips- for arrays, use methods like slice, the spread opeartor, and concat that make copies of arrays so you do not mutate them.
- */
+   Pure Recurshio tips- for arrays, use methods like slice, the spread opeartor, and concat that make copies of arrays so you do not mutate them.
+   */
 function collectOddValues(arr) {
   let newArr = [];
 
