@@ -32,51 +32,51 @@ function power(base, exponent) {
 }
 console.log(power(2, 4));
 /**
-power(2, 4)
-   return 2 * poswer(2, 4-1)
-   return 2 * poswer(2, 3)
+ power(2, 4)
+    return 2 * poswer(2, 4-1)
+    return 2 * poswer(2, 3)
+  
+ power(2, 3)
+    return 2 * power(2, 3-1)
+    return 2 * power (2, 2 )
  
-power(2, 3)
-   return 2 * power(2, 3-1)
-   return 2 * power (2, 2 )
-
-power(2, 2)
-   return 2 * power(2, 2-1)
-   return 2 * power (2, 1 )
-
-power(2, 1)
-   return 2 * power(2, 1-1)
-   return 2 * power (2, 0 )
-
-   since exponent === 0 base case stops then power(2, 0) = 1
-    
-     power(2, 1)
-         return 2 * power (2, 0 )
-         return 2 * 1 = 2
+ power(2, 2)
+    return 2 * power(2, 2-1)
+    return 2 * power (2, 1 )
  
-           power(2, 2)
-            return 2 * power(2, 1)
-            return 2 * 2 = 4
-
-            power(2, 3)
-             return 2 * power (2,2)
-             return 2 * 4 = 8
-                
-              power(2, 4) 
-                return 2 * power(2, 3)
-                return 2 * 8 = 16
-                This is the final resul = 16
-
-
+ power(2, 1)
+    return 2 * power(2, 1-1)
+    return 2 * power (2, 0 )
  
-
+    since exponent === 0 base case stops then power(2, 0) = 1
+     
+      power(2, 1)
+          return 2 * power (2, 0 )
+          return 2 * 1 = 2
+  
+            power(2, 2)
+             return 2 * power(2, 1)
+             return 2 * 2 = 4
+ 
+             power(2, 3)
+              return 2 * power (2,2)
+              return 2 * 4 = 8
+                 
+               power(2, 4) 
+                 return 2 * power(2, 3)
+                 return 2 * 8 = 16
+                 This is the final resul = 16
  
  
+  
  
- 
- 
- 
- 
- 
- 
-  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   */
