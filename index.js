@@ -1,82 +1,53 @@
-/**Power
- * Write a function called power which accepts a base and an exponent. The function should return the power of the base to the exponent. This function should mimic the functionlaity of Math.pow - do not worry about negstive bases and exponents. 
- power(2,0) // 1
- power(2,2) // 4
- power(2,4) // 16
+/**Resursive
+Whrite a recursive function called reverse which accepts a strings and returns new string in reverse.
+reverse('awesome') // 'emosewa'
+reverse('rithmschool') // 'loohcsmhtir'
  */
 
-let base = 2;
-let exponent = 3;
-console.log(Math.pow(base, exponent));
-
-function power(base, exponent) {
-  if (exponent === 0)
-    // console.log("All done");
-    return 1; //or return true;
-  //recursive call
-  return base * power(base, exponent - 1);
-
-  //step by step explantion
-  //   return 2 * power(2, 3); => the result 2 * (2^3) = 16
-  //     return 3,
-
-  //   return 2 * power(2, 2); => 2 * (2^2) = 8
-  //     return 2,
-
-  //   return 2 * power(2, 1); => 2 * (2^1) = 4
-  //     return 1,
-
-  //   return 2 * power(2, 0); => 2 * (2^0) = 2
-  //     return 3,
-  //     return 0,
+function reverse(str) {
+  if (str.length <= 1) return str;
+  return reverse(str.slice(1)) + str[0];
 }
-console.log(power(2, 4));
+
+console.log(reverse("awesome"));
 /**
-power(2, 4)
-   return 2 * poswer(2, 4-1)
-   return 2 * poswer(2, 3)
+ reverse("awesome")
+    return reverse(str.slice(1)) + str[0];
+    return reverse("wesome") + ("a")
+
+reverse("wesome")
+    return reverse(str.slice(1)) + str[0];
+    return reverse('esome') + ('w')
  
-power(2, 3)
-   return 2 * power(2, 3-1)
-   return 2 * power (2, 2 )
+reverse("esome")
+    return reverse(str.slice(1)) + str[0];
+    return reverse("some") + ("e")
 
-power(2, 2)
-   return 2 * power(2, 2-1)
-   return 2 * power (2, 1 )
+reverse("some")
+    return reverse(str.slice(1)) + str[0];
+    return reverse("ome") + ("s")
 
-power(2, 1)
-   return 2 * power(2, 1-1)
-   return 2 * power (2, 0 )
+reverse("ome")
+    return reverse(str.slice(1)) + str[0];
+    return reverse("me") + ("o")
 
-   since exponent === 0 base case stops then power(2, 0) = 1
-    
-     power(2, 1)
-         return 2 * power (2, 0 )
-         return 2 * 1 = 2
- 
-           power(2, 2)
-            return 2 * power(2, 1)
-            return 2 * 2 = 4
+reverse("me")
+  return reverse(str.slice(1)) + str[0];
+  return reverse("e") + "m"
+  str.length <= 1 base case stops
 
-            power(2, 3)
-             return 2 * power (2,2)
-             return 2 * 4 = 8
-                
-              power(2, 4) 
-                return 2 * power(2, 3)
-                return 2 * 8 = 16
-                This is the final resul = 16
+reverse("e")
+  return reverse(str.slice(1)) + str[0];
+  return reverse("") + "e"
+      
+
+//Will be back for this explanation using for video lesson tutrial
+
 
 
  
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  */
+
+
+
+ */
