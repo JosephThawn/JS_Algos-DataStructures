@@ -15,29 +15,27 @@ function someRecursive(array, callback) {
 const isOdd = (val) => val % 2 !== 0;
 console.log(someRecursive([1, 2, 3, 4], isOdd));
 /**
-someRecursive([1,2,3,4], isOdd)
-  return someRecursive(array.slice(1), callback);
-  return ([2,3,4], 1/2 !== 0)
-    return ([2,3,4], 0.5 !== 0) the base case of call back stops here because it return true
-
-
-
-someRecursive([2,3,4], isOdd))
-  return someRecursive(array.slice(1), callback);
-  return ([3,4], 0.5 !== 0)
-  return ([3,4], isOdd)
-
-
-someRecursive([3,4], isOdd)
-  return someRecursive(array.slice(1), callback);
-  return ([4], 0.5 !== 0)
-  return ([4], isOdd)
-
-
+  someRecursive([1,2,3,4], isOdd)
+    return someRecursive(array.slice(1), callback);
+    return ([2,3,4], 1/2 !== 0)
+      return ([2,3,4], 0.5 !== 0) the base case of call back stops here because it return true
   
-
-
-
-
-
- */
+  someRecursive([2,3,4], isOdd))
+    return someRecursive(array.slice(1), callback);
+    return ([3,4], 0.5 !== 0)
+    return ([3,4], isOdd)
+  
+  
+  someRecursive([3,4], isOdd)
+    return someRecursive(array.slice(1), callback);
+    return ([4], 0.5 !== 0)
+    return ([4], isOdd)
+    the base case of array stops because 
+  
+  
+  
+  //wii be back for this problem!
+    
+  
+  
+   */
