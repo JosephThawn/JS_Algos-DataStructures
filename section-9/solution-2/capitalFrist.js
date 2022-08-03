@@ -19,17 +19,17 @@ function capitalizeFirst(array) {
 
 console.log(capitalizeFirst(["car", "taco", "banana"]));
 /**
-const res = capitalizeFirst(array.slice(0, -1))
-      res  = [("car", "taco")]
-const string =
-    array.slice(array.length - 1)[0][0].toUpperCase() +
-    [("CAR"), ("TACO"), "BANANA"]
-    array.slice(array.length - 1)[0].substr(1);
-
-    Will be back for this expalnation
-
-
- */
+  const res = capitalizeFirst(array.slice(0, -1))
+        res  = [("car", "taco")]
+  const string =
+      array.slice(array.length - 1)[0][0].toUpperCase() +
+      [("CAR"), ("TACO"), "BANANA"]
+      array.slice(array.length - 1)[0].substr(1);
+  
+      Will be back for this expalnation
+  
+  
+   */
 
 //an example from stackOverFlow
 
