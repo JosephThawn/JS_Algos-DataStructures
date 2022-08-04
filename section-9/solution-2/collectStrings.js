@@ -51,5 +51,5 @@ function collectStrings(obj) {
 }
 console.log(collectStrings(obj)); // ["foo", "bar", "baz"]))
 /**
- wii be back with thorough expalnation
- */
+   wii be back with thorough expalnation
+   */

@@ -39,3 +39,20 @@ for (let day of days) {
   day = day.charAt(0).toUpperCase() + day.substr(1);
   console.log(day);
 }
+// anther example
+// let sentence = " how are you";
+
+// let res = sentence[0].toUpperCase() + sentence.slice(1).toUpperCase()
+
+// console.log(res)
+
+let sentence = "i am fine";
+function captlizeString(str) {
+  return str[0].toUpperCase() + str.slice(1).toLowerCase();
+}
+// let captlizeString = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase()
+
+let words = sentence.split(" ").map(captlizeString);
+let CapitalizedSentence = words.join("");
+console.log(words);
+console.log(CapitalizedSentence);
