@@ -19,6 +19,6 @@ function bubbleSort(arr) {
 
 bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);
 /**
- What is time complexity in bubble sort?
-  In general, ti i n^2 becasue we have a nested loop and we are roughly make a comparison, Howevery f the data is neraly or already sorted then with this new version with no swaps, it is more like linear time O(N)
- */
+   What is time complexity in bubble sort?
+    In general, ti i n^2 becasue we have a nested loop and we are roughly make a comparison, Howevery f the data is neraly or already sorted then with this new version with no swaps, it is more like linear time O(N)
+   */
